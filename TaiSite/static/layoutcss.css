@@ -1,0 +1,115 @@
+body {
+background-color: white;
+
+}
+
+
+
+#mainwrapper {
+position: relative;
+background-color: white;
+top: 0;
+padding: 10px;
+width: 760px;
+height: auto;
+min-height: 2500px;
+overflow: hidden;
+border: solid #F9CC28 20px;
+z-index:0
+
+}
+
+.secondborder {
+margin:auto;
+z-index: -100;
+border: 20px solid #C66518;
+width: 818px;
+border-radius: 5px 5px 0px 0px;
+
+
+}
+
+#MainTextContainer {
+position: relative;
+width: 550px;
+float:right;
+top:0px;
+height:auto;
+margin: 25px;
+font-family: Helvetica;
+
+}
+
+
+
+#BannerContainer {
+text-align: center;
+font-size: 30px;
+font-family: 'Fugaz One', cursive;
+margin-bottom: 10px;
+}
+
+
+
+#banner_link_container {
+float: left;
+background-color: white;
+padding: 0px;
+margin-left: 30px;
+margin-top: 50px;
+
+ 
+}
+
+.banner_link {
+font-size:25px;
+font-family: 'Fugaz One', cursive;
+text-decoration: none;
+color: #C66518;
+z-index:50
+}
+
+.banner_link:hover {
+background-color: #C66518;
+color:white;
+z-index: 50
+}
+
+
+
+#FooterContainer {
+position: relative;
+bottom: 0;
+background-color: #C66518;
+margin-top: 0px;
+width: 100%;
+float: right;
+}
+
+
+
+#FooterText {
+
+color: white;
+font-size: 12px;
+padding: 30px;
+}
+
+
+#WrapperFooter {
+bottom: 0
+
+}
+
+.mail-link {
+ font-size: 20px;
+ text-decoration: none;
+ font-family: helvetica;
+ color: black;
+}
+
+.mail-link:hover {
+ text-decoration: underline;
+
+
+}

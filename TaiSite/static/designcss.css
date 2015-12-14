@@ -1,0 +1,84 @@
+/*This is HTML5 heavy*/
+
+/* This code has been sampled from and modified from:
+ *
+ * http://www.htmlgoodies.com/html5/css/
+ * how-to-create-a-css3-based-image-gallery.html
+ * 
+ * */
+
+.imagecontainer {
+height:auto;
+width:auto;
+
+}
+
+
+.gallerya {
+float: left;
+width: 50%;
+height: auto;
+position: relative;
+border: white solid 1px;
+}
+
+
+
+.gallerya img{
+margin:5px;
+float:left;
+display: block;
+width: 100%;
+height: auto;
+-webkit-transition-property: width, height;
+-webkit-transition-duration: 100ms;
+-webkit-transition-delay: .03s;
+-moz-transition-property: width, height;
+-moz-transition-duration:100ms;
+-mos-transition-delay: .03s;
+-o-transition-property: width, height;
+-o-transition-property: 100ms;
+-o-transition-delay: .03s;
+position: relative;
+opacity: .7;
+cursor: pointer;
+}
+
+/*
+.gallerya:hover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #eaeaea;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    opacity: 0.5;
+
+}
+*/
+
+.gallerya:hover img {
+	margin:5px;
+	width: 175%; /* we increased an image to this size */
+    height: auto;
+    position: absolute;
+    opacity: 1; /* transparency is not needed */
+    z-index: 100; /* for a photo to enlarge over all images */
+    /*-moz-box-shadow: 0 0 15px 2px #000;*/
+    /*-webkit-box-shadow: 0 0 15px 2px #000;*/
+    /*box-shadow: 0 0 15px 2px #000; */
+    -webkit-transition-property: width, height; /* we decrease the image */
+    -webkit-transition-duration: 1s; /* we specify, with what speed it is necessary to increase an image */
+
+    -moz-transition-property: width, height;
+    -moz-transition-duration: 1s;
+
+    -o-transition-property:width, height;
+    -o-transition-duration: 1s;
+
+    cursor: default;
+
+
+}
+

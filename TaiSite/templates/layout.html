@@ -1,0 +1,80 @@
+$def with (content)
+
+<html>
+	<head>
+
+		<meta content = "This is a portfolio site.">
+		<meta charset = "utf-16">	
+		<title> $content.title </title>
+		<link href='https://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+	
+	$for f in content.cssfiles.split():
+		<link rel = "stylesheet" href = "$f" type = "text/css" media = "screen" charset = "utf-8"/>
+
+	</head>
+	
+	<body>
+	
+	
+	<div class = "secondborder" ><!--Second Graphical Border-->
+	<!-- Main Wrapper -->	
+	<div id = "mainwrapper">  
+		
+		<div id = "BannerContainer">
+			
+		<img src = "/static/TKSite_Header.png" alt= "TK Coding and Design"/>
+			
+		</div>
+		
+		<!-- Banner Links -->
+		
+		<a class = "mail-link" 
+				href="mailto:kerstentw@gmail.com?Subject=Hello%20again" 
+				target="_top">kerstentw@gmail.com</a>
+				
+		<div id = "banner_link_container">
+			<a class = "banner_link" href = "/about" > { About }  </a><br>
+			<a class = "banner_link" href = "/index"> { Coding }  </a><br>
+			<a class = "banner_link" href = "/design"> { Design }  </a><br>
+			<a class = "banner_link" href = "/blog/0">  { Blog }   </a><br>
+			<a class = "banner_link" href = "/links" > { Links }   </a><br>
+		</div>
+		
+		
+		
+		
+		$:content
+		
+			
+		
+		</div> <!-- Main Wrapper -->
+		</div> <!-- Second Border -->
+		
+		
+		<div id = "FooterContainer"> <!-- Footer Container -->
+			<div id = "FooterText">
+			
+			
+			<a class = "mail-link" href = "/about" > | About |  </a>
+			<a class = "mail-link" href = "/index"> | Coding |  </a>
+			<a class = "mail-link" href = "/design"> | Design |  </a>
+			<a class = "mail-link" href = "/blog/0">  | Blog |   </a>
+			<a class = "mail-link" href = "/links" > | Links |   </a>
+			<a class = "mail-link" 
+				href="mailto:kerstentw@gmail.com?Subject=Hello%20again" 
+				target="_top">kerstentw@gmail.com</a>
+			
+			<p>
+			Copywrite 2015, Tai Kersten.  All rights reserved. <br> 
+			This site was buit by Tai Kersten with Web.py, Apache2,
+			and Postgres SQL-- because, down deep, he is an old, OLD, man.
+			</p>
+			
+			</div>
+		</div> <!-- End Footer Container -->
+		
+
+	</body>
+	
+	
+</html>

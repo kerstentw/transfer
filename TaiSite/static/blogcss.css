@@ -1,0 +1,25 @@
+.codebox {
+height: 400px;
+width: 500px;
+overflow: scroll;
+border: solid black 1px;
+margin: 10px;
+
+}
+
+.numberlinks{
+text-decoration: none;
+font-family: helvetica;
+font-size: 30px;
+color: #C66518;
+margin: 2px;
+}
+
+.numberlinks:hover{
+
+background-color: #C66518;
+color: white;
+}
+
+
+
